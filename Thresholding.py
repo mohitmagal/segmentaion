@@ -12,7 +12,8 @@ class Thresholding():
 			'''y,x = np.where(imgGray<20)
 			for i in xrange(0,int(y.shape[0])):
 				imgGray[int(y[i])][int(x[i])] = 0'''
-			ret,imgGray = cv2.threshold(imgGray,20,255,cv2.THRESH_BINARY)
+			#ret,imgGray = cv2.threshold(imgGray,20,255,cv2.THRESH_BINARY)
+			ret,imgGray = cv2.threshold(imgGray,30,255,cv2.THRESH_BINARY)
 		elif imgType=="black":
 			'''y,x = np.where(imgGray>120)
 			for i in xrange(0,int(y.shape[0])):
