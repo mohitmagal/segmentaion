@@ -9,5 +9,5 @@ TRAIN_PATH = '../stage1_train'
 TEST_PATH = '../stage1_test'
 
 
-#Main().process(TRAIN_PATH,'testOutPut',"out.csv")
-Main().process(TEST_PATH,'testOutPut',"out1.csv")
+Main().process(TRAIN_PATH,'testOutPut',"out.csv")
+#Main().process(TEST_PATH,'testOutPut',"out1.csv")
