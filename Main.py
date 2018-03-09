@@ -24,6 +24,8 @@ class Main():
 				cv2.imwrite(os.path.join(processFolder,f+imgType+".png"),img)
 				if imgType=="black":
                                         imgNew = 255-imgNew
+				if Thresholding().errorFix(imgNew):
+					imgNew = 255-imgNew
 				tmpPath = os.path.join("/tmp",f)
 				cv2.imwrite(tmpPath,imgNew)
 				imgNew,runEncodeOutput = MakeContour().contours(tmpPath)
